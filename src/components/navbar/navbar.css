@@ -1,0 +1,31 @@
+.navbarContainer {
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    height: 50px;
+    width: 100%;
+    background-color: black;
+    color:white;
+    position:sticky;
+    top:0;
+}
+
+.navbarLeft {
+    flex:1;
+}
+
+.navbarCenter {
+    flex:3;
+    display:flex;
+    justify-content:space-around
+}
+
+.navbarRight {
+    flex:2;
+    display:flex;
+    justify-content:space-around;
+}
+
+.logo {
+    margin-left:1rem;
+}
