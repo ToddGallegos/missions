@@ -1,0 +1,42 @@
+.signUpContainer{
+    background-color:black;
+    min-height: calc(100vh - 50px);
+    display:flex;
+    align-items:center;
+    flex-direction:column;
+    color:white;
+}
+
+#signupSubmit {
+    padding: 4px;
+    background-color: white;
+    border-radius: 10px;
+    margin-left:3.1rem;
+    margin-top: .5rem
+}
+
+#signupSubmit:hover {
+    box-shadow: rgb(242, 241, 238) 0 0 5px;
+    cursor:pointer;
+}
+
+#signupSubmit:active {
+    background-color:rgb(176, 173, 173);
+}
+
+#signupForm {
+    margin-top: 1rem
+}
+
+.formTitle {
+    margin-top:1rem
+}
+
+.signupInput {
+    margin-bottom:.5rem
+}
+
+input {
+    height: 20px;
+    padding: 2px;
+}

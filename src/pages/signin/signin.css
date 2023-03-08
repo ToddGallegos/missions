@@ -1,0 +1,37 @@
+.signinContainer{
+    background-color:black;
+    min-height: calc(100vh - 50px);
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    color:white;
+}
+
+#signinSubmit {
+    padding: 4px;
+    background-color: white;
+    border-radius: 10px;
+    margin-left:3.1rem;
+    margin-top: .5rem;
+}
+
+#signinSubmit:hover {
+    box-shadow: rgb(242, 241, 238) 0 0 5px;
+    cursor:pointer;
+}
+
+#signinSubmit:active {
+    background-color:rgb(176, 173, 173);
+}
+
+#signinForm {
+    margin-top:1rem
+}
+
+.formTitle {
+    margin-top:1rem
+}
+
+.signinInput {
+    margin-bottom:.5rem
+}

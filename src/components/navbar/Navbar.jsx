@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom'
 
 export default function Navbar() {
 
-  const isLoggedIn = true;
+  const isLoggedIn = false;
 
   return (
     <div className="navbarContainer">
