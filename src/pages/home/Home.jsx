@@ -15,10 +15,10 @@ export default function Home() {
         </div>
       </div>
       <div className="heroRight">
-        <p>-ACCEPT HUMANITARIAN OR CARTEL MISSIONS </p>
-        <p>-EARN MONEY BASED ON CARGO DELIVERED</p>
-        <p>-BUY NEW AIRCRAFT TO EARN MORE</p>
-        <p>-CLIMB THE RANKS TO UNLOCK NEW MISSIONS</p>
+        <p>ACCEPT HUMANITARIAN OR CARTEL MISSIONS </p>
+        <p>EARN MONEY BASED ON CARGO DELIVERED</p>
+        <p>BUY NEW AIRCRAFT TO EARN MORE</p>
+        <p>CLIMB THE RANKS TO UNLOCK NEW MISSIONS</p>
       </div>
     </div>
   )

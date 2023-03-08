@@ -1,24 +1,35 @@
 import "./navbar.css"
+import {Link} from 'react-router-dom'
 
 export default function Navbar() {
+
+  const isLoggedIn = false;
+
   return (
     <div className="navbarContainer">
       <div className="navbarLeft">
-        <span className="logo">MSFS2020 MISSIONS</span>
+        <Link className="logo navbarLink" to="/">MSFS2020 MISSIONS</Link>
       </div>
       <div className="navbarCenter">
-        <span>Home</span>
-        <span>Hangar</span>
-        <span>Store</span>
-        <span>Missions</span>
-        <span>Logout</span>
-        <span>Login</span>
-        <span>Sign-Up</span>
+        <Link className="navbarLink" to="/">Home</Link>
+        <Link className="navbarLink" to="/hangar">Hangar</Link>
+        <Link className="navbarLink" to="/store">Store</Link>
+        <Link className="navbarLink" to="/missions">Missions</Link>
+        {isLoggedIn &&
+          <span>Logout</span>
+        }
+        {!isLoggedIn &&
+          <>
+            <Link className="navbarLink" to="/signin">Login</Link>
+            <Link className="navbarLink" to="/signup">Sign-Up</Link>
+          </>
+        }
       </div>
-      <div className="navbarRight">
-        <span>Pilot: Todd G</span>
-        <span>Cash: $9,999,999</span>
-      </div>
+      {isLoggedIn &&
+        <div className="navbarRight">
+          <span>Cash: $9,999,999</span>
+        </div>
+      }
       
     </div>
   )

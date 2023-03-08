@@ -8,6 +8,7 @@
     color:white;
     position:sticky;
     top:0;
+    border-bottom:1px solid white;
 }
 
 .navbarLeft {
@@ -21,11 +22,33 @@
 }
 
 .navbarRight {
-    flex:2;
+    flex:1;
     display:flex;
-    justify-content:space-around;
+    justify-content:flex-end;
+    margin-right:1rem;
+    color:red;
 }
 
 .logo {
     margin-left:1rem;
+}
+
+.logo:hover {
+    cursor:pointer;
+}
+
+.navbarCenter span:hover {
+    cursor:pointer;
+}
+
+.navbarLink {
+    text-decoration: none;
+}
+
+.navbarLink:visited {
+    color:white;
+}
+
+.navbarLink:hover {
+    text-shadow: #FC0 1px 0 10px;
 }
