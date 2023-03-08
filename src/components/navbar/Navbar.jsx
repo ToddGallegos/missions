@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom'
 
 export default function Navbar() {
 
-  const isLoggedIn = false;
+  const isLoggedIn = true;
 
   return (
     <div className="navbarContainer">
@@ -16,7 +16,7 @@ export default function Navbar() {
         <Link className="navbarLink" to="/store">Store</Link>
         <Link className="navbarLink" to="/missions">Missions</Link>
         {isLoggedIn &&
-          <span>Logout</span>
+          <span className="navbarLink">Logout</span>
         }
         {!isLoggedIn &&
           <>

@@ -31,6 +31,7 @@
 
 .logo {
     margin-left:1rem;
+    color:red !important;
 }
 
 .logo:hover {
@@ -50,5 +51,5 @@
 }
 
 .navbarLink:hover {
-    text-shadow: #FC0 1px 0 10px;
+    text-shadow: rgb(242, 241, 238) 0 0 10px;
 }
