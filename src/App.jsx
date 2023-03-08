@@ -2,7 +2,7 @@
 function App() {
   return (
     <div className="App">
-      <p>test</p>
+      <h1>MSFS2020 MISSIONS</h1>
     </div>
   );
 }
