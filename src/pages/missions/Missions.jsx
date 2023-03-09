@@ -13,7 +13,7 @@ export default function Missions(props) {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    let earned = props.money + 80000;
+    let earned = props.user.money + 80000;
     props.setMoney(earned)
     setMissionCompleted(true)
   }

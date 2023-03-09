@@ -31,21 +31,21 @@ function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false)
   const [money, setMoney] = useState(0)
 
-  useEffect(() => {
-    const fetchData = async () => {
-      const inventory = await getAircrafts();
-      setAircrafts(inventory);
-    };
-    fetchData();
-  }, []);
+  // useEffect(() => {
+  //   const fetchData = async () => {
+  //     const inventory = await getAircrafts();
+  //     setAircrafts(inventory);
+  //   };
+  //   fetchData();
+  // }, []);
 
-  useEffect(() => {
-    const fetchData = async () => {
-      const inventory = await getNpcs();
-      setNpcs(inventory);
-    };
-    fetchData();
-  }, []);
+  // useEffect(() => {
+  //   const fetchData = async () => {
+  //     const inventory = await getNpcs();
+  //     setNpcs(inventory);
+  //   };
+  //   fetchData();
+  // }, []);
 
 
   return (
@@ -57,7 +57,7 @@ function App() {
           <Route path='/aircraft' element={<Aircraft aircrafts={aircrafts}/>} />
           <Route path='/aircrafts' element={<Aircrafts aircrafts={aircrafts}/>} />
           <Route path='/npc' element={<Npc  npcs={npcs} setNpcs={setNpcs}/>} />
-          <Route path='/missions' element={<Missions npcs={npcs} setNpcs={setNpcs} money={money} setMoney={setMoney}/>} />
+          <Route path='/missions' element={<Missions npcs={npcs} setNpcs={setNpcs} money={money} setMoney={setMoney} user={user} setUser={setUser}/>} />
           <Route path='/signin' element={<Signin setUser={setUser} user={user} isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn}/>} />
           <Route path='/signup' element={<Signup />} />
           <Route path='/hangar' element={<Hangar aircrafts={aircrafts}/>} />
