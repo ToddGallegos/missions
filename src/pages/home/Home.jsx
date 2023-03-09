@@ -1,5 +1,6 @@
 import './home.css';
 import image from "../../img/icona5.png";
+import {Link} from 'react-router-dom';
 
 export default function Home() {
   return (
@@ -10,8 +11,8 @@ export default function Home() {
           <h1>Missions</h1>
         </div>
         <div className="buttons">
-          <button>Sign-Up Free</button>
-          <button>Login</button>
+        <Link to="/signup"><button>Sign-Up Free</button></Link>
+        <Link to="/signin"><button>Login</button></Link>
         </div>
       </div>
       <div className="heroRight">
