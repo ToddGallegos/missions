@@ -2,7 +2,7 @@ import Home from "./pages/home/Home";
 import Navbar from "./components/navbar/Navbar";
 import Aircrafts from "./pages/aircrafts/Aircrafts";
 import Aircraft from "./pages/aircraft/Aircraft";
-import Npcs from "./pages/npcs/Npcs";
+import Missions from "./pages/missions/Missions";
 import Npc from "./pages/npc/Npc";
 import Signin from "./pages/signin/Signin";
 import Signup from "./pages/signup/Signup";
@@ -55,7 +55,7 @@ function App() {
           <Route path='/aircraft' element={<Aircraft aircrafts={aircrafts}/>} />
           <Route path='/aircrafts' element={<Aircrafts aircrafts={aircrafts}/>} />
           <Route path='/npc' element={<Npc  npcs={npcs} setNpcs={setNpcs}/>} />
-          <Route path='/npcs' element={<Npcs npcs={npcs} setNpcs={setNpcs}/>} />
+          <Route path='/missions' element={<Missions npcs={npcs} setNpcs={setNpcs}/>} />
           <Route path='/signin' element={<Signin setUser={setUser} user={user}/>} />
           <Route path='/signup' element={<Signup />} />
           <Route path='/hangar' element={<Hangar aircrafts={aircrafts}/>} />

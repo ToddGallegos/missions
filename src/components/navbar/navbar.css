@@ -53,3 +53,7 @@
 .navbarLink:hover {
     text-shadow: rgb(242, 241, 238) 0 0 10px;
 }
+
+.navbarLink:link {
+    color:white;
+}
