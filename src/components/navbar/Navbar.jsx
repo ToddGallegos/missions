@@ -5,6 +5,7 @@ export default function Navbar(props) {
 
   const logout = () => {
     props.setIsLoggedIn(false);
+    alert("Successfully logged out.")
   }
 
   return (
@@ -29,7 +30,7 @@ export default function Navbar(props) {
       </div>
       {props.isLoggedIn &&
         <div className="navbarRight">
-          <span>Cash: ${props.money.toLocaleString("en-US")}</span>
+          <span>Cash: ${props.user.money}</span>
         </div>
       }
       

@@ -51,7 +51,7 @@ function App() {
   return (
     <BrowserRouter>
       <div>
-        <Navbar isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} money={money} setMoney={setMoney}/>
+        <Navbar isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} money={money} setMoney={setMoney} user={user}/>
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/aircraft' element={<Aircraft aircrafts={aircrafts}/>} />

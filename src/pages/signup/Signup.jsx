@@ -1,6 +1,7 @@
 import "./signup.css";
 
 export default function SignUp() {
+    
     const signUp = async (event) => {
         event.preventDefault();
         const username = event.target.elements["username"].value;

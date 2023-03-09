@@ -4,7 +4,7 @@ export default function Signin(props) {
 
   const signIn = async (event) => {
     event.preventDefault();
-    props.setIsLoggedIn(true);
+    
     const username = event.target.elements["username"].value;
     const password = event.target.elements["password"].value;
 
@@ -24,12 +24,13 @@ export default function Signin(props) {
     console.log(data)
     props.setUser(data.user)
     alert(data.message)
+    props.setIsLoggedIn(true);
   }
 
   return (
     <div className="signinContainer">
       <h1 className="formTitle">LOGIN</h1>
-      <form id="signinForm" onSubmit={signIn} autocomplete="off">
+      <form id="signinForm" onSubmit={signIn} autoComplete="off">
         <label htmlFor="username">Username: </label> <br />
         <input className="signinInput" autoFocus="True" type="text" name="username" id="username" />
         <br />
