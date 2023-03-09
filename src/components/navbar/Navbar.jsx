@@ -1,9 +1,11 @@
 import "./navbar.css"
 import {Link} from 'react-router-dom'
 
-export default function Navbar() {
+export default function Navbar(props) {
 
-  const isLoggedIn = false;
+  const logout = () => {
+    props.setIsLoggedIn(false);
+  }
 
   return (
     <div className="navbarContainer">
@@ -15,19 +17,19 @@ export default function Navbar() {
         <Link className="navbarLink" to="/hangar">Hangar</Link>
         <Link className="navbarLink" to="/store">Store</Link>
         <Link className="navbarLink" to="/missions">Missions</Link>
-        {isLoggedIn &&
-          <span className="navbarLink">Logout</span>
+        {props.isLoggedIn &&
+          <span className="navbarLink" onClick={logout}>Logout</span>
         }
-        {!isLoggedIn &&
+        {!props.isLoggedIn &&
           <>
             <Link className="navbarLink" to="/signin">Login</Link>
             <Link className="navbarLink" to="/signup">Sign-Up</Link>
           </>
         }
       </div>
-      {isLoggedIn &&
+      {props.isLoggedIn &&
         <div className="navbarRight">
-          <span>Cash: $9,999,999</span>
+          <span>Cash: ${props.money.toLocaleString("en-US")}</span>
         </div>
       }
       

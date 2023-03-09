@@ -4,6 +4,7 @@ export default function Signin(props) {
 
   const signIn = async (event) => {
     event.preventDefault();
+    props.setIsLoggedIn(true);
     const username = event.target.elements["username"].value;
     const password = event.target.elements["password"].value;
 

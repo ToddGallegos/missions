@@ -2,7 +2,7 @@ import walterImg from "../../images/walterwhite.jpg";
 import "./missions.css";
 import { useState } from "react";
 
-export default function Missions() {
+export default function Missions(props) {
 
   const [accepted, setAccepted] = useState(false);
   const [missionCompleted, setMissionCompleted] = useState(false)
@@ -13,6 +13,8 @@ export default function Missions() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
+    let earned = props.money + 80000;
+    props.setMoney(earned)
     setMissionCompleted(true)
   }
 
