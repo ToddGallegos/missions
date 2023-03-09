@@ -8,7 +8,7 @@ export default function Store() {
     return (
         <div className="storeContainer">
 
-            <h1 className="storeTitle">Store</h1>
+            <h1 className="storeTitle">STORE</h1>
 
             <div className="cardContainer">
 

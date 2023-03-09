@@ -26,12 +26,12 @@
     display:flex;
     justify-content:flex-end;
     margin-right:1rem;
-    color:red;
+    color:rgb(210, 0, 0);
 }
 
 .logo {
     margin-left:1rem;
-    color:red !important;
+    color:rgb(210, 0, 0) !important;
 }
 
 .logo:hover {

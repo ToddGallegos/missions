@@ -28,7 +28,8 @@
 }
 
 .formTitle {
-    margin-top:1rem
+    margin-top:1rem;
+    color:rgb(210, 0, 0);
 }
 
 .signinInput {

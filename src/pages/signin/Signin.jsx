@@ -27,8 +27,8 @@ export default function Signin(props) {
 
   return (
     <div className="signinContainer">
-      <h1 className="formTitle">Login</h1>
-      <form id="signinForm" onSubmit={signIn}>
+      <h1 className="formTitle">LOGIN</h1>
+      <form id="signinForm" onSubmit={signIn} autocomplete="off">
         <label htmlFor="username">Username: </label> <br />
         <input className="signinInput" autoFocus="True" type="text" name="username" id="username" />
         <br />

@@ -4,7 +4,7 @@ import "./hangar.css";
 export default function Hangar() {
   return (
     <div className="hangarContainer">
-        <h1 className="hangarTitle">Your Aircraft</h1>
+        <h1 className="hangarTitle">YOUR AIRCRAFT</h1>
         <div className="card">
             <img className="aircraftImage" src={img} alt="plane"/>
             <p className="hangarParagraph">Price: $64,000</p>

@@ -35,8 +35,8 @@ export default function SignUp() {
 
     return (
         <div className="signUpContainer">
-            <h1 className="formTitle">Sign-Up</h1>
-            <form id="signupForm" onSubmit={signUp}>
+            <h1 className="formTitle">SIGN-UP</h1>
+            <form id="signupForm" onSubmit={signUp} autocomplete="off">
                 <label htmlFor="username">Username: </label> <br />
                 <input className="signupInput"
                     autoFocus="True"
