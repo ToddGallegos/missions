@@ -6,6 +6,8 @@ import Npcs from "./pages/npcs/Npcs";
 import Npc from "./pages/npc/Npc";
 import Signin from "./pages/signin/Signin";
 import Signup from "./pages/signup/Signup";
+import Hangar from "./pages/hangar/Hangar";
+import Store from "./pages/store/Store";
 import { Routes, Route, BrowserRouter } from 'react-router-dom';
 import {useState, useEffect} from 'react';
 
@@ -56,6 +58,8 @@ function App() {
           <Route path='/npcs' element={<Npcs npcs={npcs} setNpcs={setNpcs}/>} />
           <Route path='/signin' element={<Signin setUser={setUser} user={user}/>} />
           <Route path='/signup' element={<Signup />} />
+          <Route path='/hangar' element={<Hangar aircrafts={aircrafts}/>} />
+          <Route path='/store' element={<Store aircrafts={aircrafts}/>} />
         </Routes>
       </div>
     </BrowserRouter>
