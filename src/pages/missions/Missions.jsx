@@ -39,7 +39,7 @@ export default function Missions(props) {
                 {accepted &&
                   <div className="missionForm">
                     <p>Mission accepted!</p>
-                    <form className="submissionForm" onSubmit={handleSubmit} autocomplete="off">
+                    <form className="submissionForm" onSubmit={handleSubmit} autoComplete="off">
                       <label htmlFor="cargoWeight">Cargo Weight: </label> <br />
                       <input type="text" name="cargoWeight" id="cargoWeight" />
                       <br />
