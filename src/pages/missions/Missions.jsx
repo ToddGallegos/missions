@@ -11,11 +11,29 @@ export default function Missions(props) {
     setAccepted(true);
   }
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
     let earned = props.user.money + 80000;
     props.setMoney(earned)
-    setMissionCompleted(true)
+    const reqBody = {
+      username: props.user.username,
+      money: earned
+    };
+    const response = await fetch(
+      "http://localhost:5000/money",
+      {
+          method: "POST",
+          headers: {
+              "Content-Type": "application/json",
+          },
+          body: JSON.stringify(reqBody),
+      }
+    );
+    const data = await response.json();
+    console.log(data);
+    alert(data.message)
+
+      setMissionCompleted(true)
   }
 
   return (
