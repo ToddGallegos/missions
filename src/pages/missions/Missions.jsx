@@ -1,11 +1,15 @@
 import walterImg from "../../images/walterwhite.jpg";
 import "./missions.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function Missions(props) {
 
   const [accepted, setAccepted] = useState(false);
   const [missionCompleted, setMissionCompleted] = useState(false)
+
+  // useEffect(() => {
+  //   props.setMoney(props.user.money)
+  // }, [earned]);
 
   const accept = () => {
     setAccepted(true);

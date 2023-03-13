@@ -31,6 +31,7 @@ function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false)
   const [money, setMoney] = useState(0)
 
+
   // useEffect(() => {
   //   const fetchData = async () => {
   //     const inventory = await getAircrafts();
