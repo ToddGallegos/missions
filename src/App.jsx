@@ -29,7 +29,7 @@ function App() {
   const [user, setUser] = useState([])
   const [npcs, setNpcs] = useState([])
   const [isLoggedIn, setIsLoggedIn] = useState(false)
-  const [money, setMoney] = useState(0)
+  // const [money, setMoney] = useState(0)
 
 
   // useEffect(() => {
@@ -52,13 +52,13 @@ function App() {
   return (
     <BrowserRouter>
       <div>
-        <Navbar isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} money={money} setMoney={setMoney} user={user}/>
+        <Navbar isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} user={user} setUser={setUser}/>
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/aircraft' element={<Aircraft aircrafts={aircrafts}/>} />
           <Route path='/aircrafts' element={<Aircrafts aircrafts={aircrafts}/>} />
           <Route path='/npc' element={<Npc  npcs={npcs} setNpcs={setNpcs}/>} />
-          <Route path='/missions' element={<Missions npcs={npcs} setNpcs={setNpcs} money={money} setMoney={setMoney} user={user} setUser={setUser}/>} />
+          <Route path='/missions' element={<Missions npcs={npcs} setNpcs={setNpcs} user={user} setUser={setUser}/>} />
           <Route path='/signin' element={<Signin setUser={setUser} user={user} isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn}/>} />
           <Route path='/signup' element={<Signup />} />
           <Route path='/hangar' element={<Hangar aircrafts={aircrafts}/>} />

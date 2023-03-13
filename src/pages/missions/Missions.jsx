@@ -18,7 +18,7 @@ export default function Missions(props) {
   const handleSubmit = async (event) => {
     event.preventDefault();
     let earned = props.user.money + 80000;
-    props.setMoney(earned)
+    props.setUser({...props.user, money: earned })
     const reqBody = {
       username: props.user.username,
       money: earned
