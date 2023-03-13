@@ -1,6 +1,8 @@
-import "./signin.css"
+import "./signin.css";
+import { useNavigate } from "react-router-dom";
 
 export default function Signin(props) {
+  const navigate = useNavigate();
 
   const signIn = async (event) => {
     event.preventDefault();
@@ -21,10 +23,12 @@ export default function Signin(props) {
       body: JSON.stringify(reqBody)
     });
     const data = await response.json();
-    console.log(data)
-    props.setUser(data.user)
-    alert(data.message)
+    console.log(data);
+    props.setUser(data.user);
+    alert(data.message);
     props.setIsLoggedIn(true);
+    event.target.reset();
+    navigate('/hangar');
   }
 
   return (
